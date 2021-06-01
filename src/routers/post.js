@@ -36,7 +36,7 @@ router.get("/posts/:id", async (req, res) => {
         res.send(post)
     }
     catch (e) {
-        res.status.send(e)
+        res.status(500).send(e)
     }
 })
 
